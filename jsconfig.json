@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "module": "es2020",
+    "paths": {
+      "*": ["./*"]
+    },
+    "target": "es2020"
+  },
+  "exclude": ["node_modules"]
+}

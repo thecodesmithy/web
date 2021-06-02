@@ -1,15 +1,23 @@
 {
-  "name": "web",
+  "name": "@codesmithy/web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "export": "next export",
+    "start": "next start",
+    "deploy": "npm-run-all build export",
+    "lint": "eslint --fix --ext js --ext jsx ."
   },
   "dependencies": {
     "next": "10.2.3",
     "react": "17.0.2",
     "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.27.0",
+    "eslint-plugin-react": "^7.24.0",
+    "npm-run-all": "^4.1.5"
   }
 }
