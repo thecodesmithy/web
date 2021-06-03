@@ -1,7 +1,14 @@
-import { Fragment } from 'react';
+import { Fragment, useEffect } from 'react';
 import Head from 'next/head';
+import ReactGA from 'react-ga';
 
 const HomePage = () => {
+
+  useEffect(() => {
+    ReactGA.initialize('G-90TV4MDSLV');
+    ReactGA.pageview(window.location.pathname + window.location.search);    
+  }, []);
+
   return (
     <Fragment>
       <Head>
