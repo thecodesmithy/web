@@ -11,6 +11,7 @@
     "lint": "eslint --fix --ext js --ext jsx ."
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "bootstrap": "^5.0.1",
     "next": "10.2.3",
     "react": "17.0.2",

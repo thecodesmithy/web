@@ -2,6 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
+$fa-font-path: "../webfonts";
+
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+
 $primary: #d10000;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
