@@ -12,52 +12,18 @@ const HomePage = () => {
         />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link href="/favicon.ico" rel="icon" type="image/x-icon" />
-        <link href="https://fonts.gstatic.com" rel="preconnect" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css?family=Varela+Round"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-          rel="stylesheet"
-        />
-        <script
-          src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
-          crossOrigin="anonymous"
-        ></script>
-        <link href="/css/styles.css" rel="stylesheet" />
-
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
         <title>Software As A Craft :: Code Smithy Ltd</title>
       </Head>
 
-      <nav
-        className="navbar navbar-expand-lg navbar-light fixed-top"
-        id="mainNav"
-      >
-        <div className="container px-4 px-lg-5">
+      <nav className="navbar navbar-expand navbar-dark bg-dark fixed-top">
+        <div className="container">
           <a className="navbar-brand" href="#page-top">
             Code Smithy Ltd
           </a>
-          <button
-            className="navbar-toggler navbar-toggler-right"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarResponsive"
-            aria-controls="navbarResponsive"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            Menu
-            <i className="fas fa-bars"></i>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarResponsive">
-            <ul className="navbar-nav ms-auto">
+          <div className="collapse navbar-collapse">
+            <ul className="navbar-nav">
               <li className="nav-item">
                 <a className="nav-link" href="#about">
                   About Us
@@ -118,7 +84,7 @@ const HomePage = () => {
             </div>
           </div>
           <img
-            src="/assets/img/about.png"
+            src="/img/about.png"
             alt="About Brand"
             className="img-fluid"
           />
@@ -126,19 +92,17 @@ const HomePage = () => {
       </section>
 
       <section className="projects-section bg-light" id="projects">
-        <div className="container px-4 px-lg-5">
-          <h2 className="text-black mb-4">Our Work</h2>
-          <div className="row mb-4 mb-lg-5 align-items-center">
-            <div className="col-6">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 text-center">
               <img
-                src="/assets/img/medicyn-logo.png"
+                src="/img/medicyn-logo.png"
                 alt="MediCyn Project Logo"
                 className="img-fluid"
               />
             </div>
-            <div className="col-6">
-              <div className="featured-text text-center text-lg-left">
-                <h4>MediCyn FMD</h4>
+            <div className="col-12 text-center">
+              <div className="featured-text">
                 <p className="text-black-50 mb-0">
                   A native Android app that ran on Honeywell PDA hand scanners.
                   The software would be used to scan boxes of medication, parse
@@ -150,20 +114,15 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-
-          <div className="row gx-0 mb-5 mb-lg-0 justify-content-center">
-            <div className="col-lg-12">
-              <img
-                src="/assets/img/medicyn-showreel.png"
-                alt="MediCyn Showreel"
-                className="img-fluid"
-              />
-            </div>
-          </div>
+          <img
+            src="/img/medicyn-showreel.png"
+            alt="MediCyn Showreel"
+            className="img-fluid"
+          />
         </div>
       </section>
 
-      <section className="contact-section bg-black" id="contact">
+      <section className="contact-section bg-dark" id="contact">
         <div className="container px-4 px-lg-5">
           <div className="row gx-4 gx-lg-5">
             <div className="col-md-4 mb-3 mb-md-0">
@@ -203,11 +162,13 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <footer className="footer bg-black small text-center text-white-50">
+
+      <footer className="footer bg-dark small text-center text-white-50">
         <div className="container px-4 px-lg-5">
           Copyright &copy; Code Smithy Ltd. 2021
         </div>
       </footer>
+
     </Fragment>
   );
 };
