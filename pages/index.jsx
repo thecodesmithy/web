@@ -17,7 +17,7 @@ const HomePage = () => {
         <title>Software As A Craft :: Code Smithy Ltd</title>
       </Head>
 
-      <nav className="navbar navbar-expand navbar-dark bg-dark fixed-top">
+      <nav className="navbar navbar-expand navbar-dark bg-black fixed-top">
         <div className="container">
           <a className="navbar-brand" href="#page-top">
             Code Smithy Ltd
@@ -155,7 +155,9 @@ const HomePage = () => {
                   <i className="fas fa-mobile-alt fa-2x fa-fw text-primary mb-2"></i>
                   <h4 className="text-uppercase m-0">Phone</h4>
                   <hr className="my-4 mx-auto" />
-                  <div className="small text-black-50">+44 7505 494975</div>
+                  <div className="small text-black-50">
+                    <a href="tel:00447505494975">+44 7505 494975</a>
+                  </div>
                 </div>
               </div>
             </div>
