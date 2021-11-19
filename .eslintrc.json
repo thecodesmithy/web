@@ -1,0 +1,61 @@
+{
+  "extends": "next/core-web-vitals",
+  "plugins": ["simple-import-sort", "import"],
+  "rules": {
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 2
+      }
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 100,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreTrailingComments": true,
+        "ignoreUrls": true,
+        "tabWidth": 2
+      }
+    ],
+    "no-trailing-spaces": "error",
+    "object-curly-spacing": [
+      "error",
+      "always",
+      {
+        "arraysInObjects": true
+      }
+    ],
+    "react/jsx-curly-spacing": [
+      "error",
+      {
+        "allowMultiline": true,
+        "children": true,
+        "spacing": {
+          "objectLiterals": "never"
+        },
+        "when": "always"
+      }
+    ],
+    "react/jsx-sort-props": [
+      "error",
+      {
+        "callbacksLast": true,
+        "ignoreCase": true,
+        "noSortAlphabetically": false,
+        "shorthandFirst": true
+      }
+    ],
+    "react/prop-types": "off",
+    "semi": ["error", "never"],
+    "simple-import-sort/exports": "error",
+    "simple-import-sort/imports": [
+      "error",
+      {
+        "groups": [["^react", "\\w+", "^@codesmithy"], ["^.*\\.s?css"]]
+      }
+    ]
+  }
+}
